@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="King_Stylesheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>R.H. King Academy</title>
+    </head>
+
+    <body>
+        <header>
+            <a href="homepage.html" class="wordLogo">R.H. King Academy</a>
+            <div class="menu">
+              <div class="btn">
+                 <i class="fas fa-times close-btn"></i>
+              </div>
+
+              <a id= "home" href="#">Home</a>
+
+              <div class = "NavSec">
+                  <div class = "SecName">
+                    <a href="#">About
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                  </div>
+                  <div class="DDC">
+                    <a href="#">Admin Team</a>
+                    <a href="#">Mission Statement</a>
+                    <a href="#">R.H. King Tradition</a>
+                    <a href="#">Uniform</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Departments</a>
+                    <a href="#">Kingsley Voice</a>
+                    <a href="#">Principal's Message</a>
+                    <a href="#">Our Staff</a>
+                  </div>
+              </div>
+
+              <div class = "NavSec">
+                 <div class = "SecName">
+                    <a href="#">Special Programs
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                  </div>
+                <div class="DDC">
+                  <a href="#">Clinic Period</a>
+                  <a href="#">Mentor Period</a>
+                  <a href="#">Specialist High School Major</a>
+                  <a href="#">Leadership Pathways</a>
+                  <a href="#">CISCO Networking</a>
+                </div>
+            </div>
+
+            <div class = "NavSec">
+                <div class = "SecName">
+                   <a href="#">Parents
+                    <i class="fa fa-caret-down"></i>
+                   </a>
+                 </div>
+               <div class="DDC">
+                 <a href="#">Policies/Procedures</a>
+                 <a href="#">School Cash Online</a>
+                 <a href="#">Documents & Updates</a>
+                 <a href="#">School Council Wiki</a>
+                 <a href="#">Trustee Parthi Kandavel</a>
+                 <a href="#">In School Ancouncements</a>
+                 <a href="#">Parent Conference</a>
+               </div>
+           </div>
+
+           <div class = "NavSec">
+                <div class = "SecName">
+                   <a href="#">Clubs and Councils
+                    <i class="fa fa-caret-down"></i>
+                   </a>
+                 </div>
+               <div class="DDC">
+                 <a href="#">Club List</a>
+                 <a href="#">Leadership Council List</a>
+               </div>
+           </div>
+
+           <div class = "NavSec">
+                <div class = "SecName">
+                    <a href="#">Students
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                 </div>
+               <div class="DDC">
+                 <a href="#">Student Services</a>
+                 <a href="#">Community Service Pass</a>
+                 <a href="#">Announcement Board</a>
+                 <a href="#">Academic Workspace</a>
+                 <a href="#">Brightspace</a>
+                 <a href="#">Student Saftey Line</a>
+               </div>
+           </div>
+
+           <div class = "NavSec">
+                <div class = "SecName">
+                    <a href="#">COVID-19 Information
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                 </div>
+               <div class="DDC">
+                 <a href="#">Info for Parents</a>
+                 <a href="#">COVID Testing</a>
+                 <a href="#">COVID Symptoms</a>
+                 <a href="#">Screening Staff/Visitors</a>
+                 <a href="#">Screening for Students</a>
+                 <a href="#">Mental Health Resources</a>
+               </div>
+           </div>
+
+            </div>
+            <div class="btn">
+              <i class="fas fa-bars menu-btn"></i>
+            </div>
+        </header>
+
+        <script type="text/javascript">
+          window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle('scrolling-active', window.scrollY > 0);
+          });
+      
+          var menu = document.querySelector('.menu');
+          var menuBtn = document.querySelector('.menu-btn');
+          var closeBtn = document.querySelector('.close-btn');
+      
+          menuBtn.addEventListener("click", () => {
+            menu.classList.add('active');
+          });
+      
+          closeBtn.addEventListener("click", () => {
+            menu.classList.remove('active');
+          });
+      </script>
+
+        <div>
+            <div class = "kingDroneVideo">
+                <video class = "darken" autoplay muted loop>
+                    <source src="R.H. King Drone Loop.mp4">
+                </video>
+            </div>   
+        </div>
+        <div class="content">
+            <div class="one">
+                <div class = "weatherWidget">
+                    <div id="ww_4bb6454ae6222" v='1.5' loc='id' a='{"t":"responsive","lang":"en","ids":["wl1531"],"cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_tof":"5","sl_sot":"celsius","sl_ics":"one_a","font":"Arial"}'>Weather for the Following Location: <a href="https://2ua.org/can/toronto/map/" id="ww_4bb6454ae6222_u" target="_blank">Toronto, Canada</a></div><script async src="https://srv2.weatherwidget.org/js/?id=ww_4bb6454ae6222"></script>
+                </div>
+            </div>
+            <div class="two">
+                <div class = "widgetOverlay">
+                    <h1 class="widgetTitle">Infographic:</h1>
+                    <p class="widgetDescription">
+                        Know when to self-isolate from Toronto Public Health
+                    </p>
+                        <button class="widgetButton" onclick = "window.open('http://schools.tdsb.on.ca/rhking/community/tph.pdf')">Learn More</button>
+                </div>
+            </div>
+            <div class="three">
+                <div class = "widgetOverlay">
+                    <h1 class="widgetTitle">Returning to School:</h1>
+                        <button class="widgetButton" onclick = "window.open('https://www.tdsb.on.ca/In-Person-Learning')">Learn More</button>
+                </div>
+            </div>
+            <div class="four">
+                <div class = "widgetOverlay">
+                    <h1 class="widgetTitle">Returning to School - Virtual School:</h1>
+                    <button class="widgetButton" onclick = "window.open('https://www.tdsb.on.ca/Virtual-School/Virtual-School-Secondary')">Learn More</button>
+                </div>
+            </div>
+            <div class="five">
+                <div class = "widgetOverlay">
+                    <h1 class="widgetTitle">Password Reset | Brightspace | Google Classroom</h1>
+                    <button class="widgetButton" onclick = "window.open('https://drive.google.com/file/d/15_pljdObRx_V-0HaNiWaWgRirVjftYh7/view')">Learn More</button>
+                </div>
+            </div>
+            <div class="six">
+                <div>   
+                    <a class="twitter-timeline" data-height="500px" data-dnt="true" href="https://twitter.com/RHKingAcademy?ref_src=twsrc%5Etfw">Tweets by RHKingAcademy</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+                </div>
+            </div>
+            <div class="seven">
+                <div>
+                    <iframe class = "googleCalender" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FToronto&src=ZHJhcHRvdUBzeW1wYXRpY28uY2E&color=%23D81B60&showTz=0&showPrint=1&showTabs=0&mode=AGENDA&showCalendars=1&showNav=1" style="border-width:0" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
+            <div class="eight">
+                <div id = "GoogleMap">
+                    <iframe class = "GoogleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.4525614026156!2d-79.23868027235822!3d43.72192460976175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cfc84a764019%3A0x553a186ec145d671!2sR.H.%20King%20Academy!5e0!3m2!1sen!2sca!4v1628460219186!5m2!1sen!2sca" width="100%2" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>FOOT</title>
+    </head>
+
+<footer class="footer" id="footer">
+
+    <span class="col">
+        <h3 class="col-title">Navigation:</h3>
+        <nav class="col-list">
+          <ul>
+              <li> <i class="fa fa-chevron-up"></i> <a href="#">Go To Top</a></li>
+              <li> <i class="fas fa-globe"></i> <a href="#">Site Map</a></li>
+          </ul>
+        </nav>
+      </span>
+  
+    <span class="col">
+        <h3 class="col-title">Staff:</h3>
+        <nav class="col-list">
+          <ul>
+            <li>Principal: <a href="#">Catherine Chang</a></li>
+            <li>Vice-Principal(s): <a href="#">Tasneem Munir</a> <br> <a style="margin-left:122px; "href="#">Lesley McLean</a></li>
+            <li>Superintendent: <a href="#">Lisa Dilworth</a></li>
+            <li>Trustee: <a href="#">Parthi Kandavel</a></li>
+          </ul>
+        </nav>
+      </span>
+  
+    <span class="col">
+        <h3 class="col-title">Contact Us:</h3>
+        <nav class="col-list">
+          <ul>
+            <li> <i class="fa fa-phone"></i> <a href="#">(416) 396-5550</a></li>
+            <li> <i class="fa fa-envelope"></i> <a href="#">RHKing@tdsb.on.ca</a></li>
+            <li> <i class="fas fa-map-marker-alt"></i> <a href="#">3800 St Clair Ave E Scarborough, ON M1M 1V3</a></li>
+          </ul>
+        </nav>
+      </span>
+
+    <span class="col">
+        <button class="subscribe-btn">Staff Login</button>
+
+        <div class="social-media">
+          <h3 class="social-col-title">Follow us:</h3>
+          <ul class="social-media-list">
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+          </ul>
+        </div>
+      </span>
+      
+  </footer>
+    </body>
+</html>

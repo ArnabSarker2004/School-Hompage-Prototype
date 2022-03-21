@@ -1,0 +1,506 @@
+/*----------------------------------------------------------------------CONSTANTS---------------------------------------------------------------------------------------------------*/
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+.hide
+{
+    display: none;    
+}
+.center
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/*----------------------------------------------------------------------NAVBAR---------------------------------------------------------------------------------------------------*/
+header
+{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+    transition: 0.6s;
+}
+header .wordLogo
+{
+    color:white;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+header .menu
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .menu a
+{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+
+    transition: 0.5s;
+}
+header .btn
+{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    padding-left: 40px;
+    float: right;
+}
+.SecName
+{
+    font-size: 1.1em;
+}
+/*------------------------------------------------------------------------------DROP DOWN CONTENTS-----------------------------------------------------------------------------------*/
+#home
+{
+    display: none;
+}
+.DDC
+{
+    display: none;
+    position: absolute;
+    background-color: inherit;
+    min-width: 160px;
+    z-index: 100;
+}
+.DDC a
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+}
+.NavSec:hover .DDC
+{
+    display: block;
+}
+.fa-caret-down
+{
+    color: white;
+}
+/*------------------------------------------------------------------------------NAVBAR SCROLLING EFFECT----------------------------------------------------------------------------*/
+header.scrolling-active
+{
+    background-color: #ffffff;
+    padding: 20px 80px;
+    color: #11538C;
+    box-shadow: 5px 10px 25px #575757;
+}
+.scrolling-active .wordLogo
+{
+    color: #11538C;
+}
+.scrolling-active .menu a
+{
+    color: #11538C;
+}
+.scrolling-active .btn
+{
+    color: #11538C;
+}
+.scrolling-active .DDC
+{
+    background-color: white;
+}
+.scrolling-active .fa-caret-down
+{
+    color:#11538C;
+}
+/*----------------------------------------------------------------------VIDEO---------------------------------------------------------------------------------------------------*/
+.kingDroneVideo
+{
+    width: 100%;
+    height: auto;
+    background-size:cover;
+    background-position:center; 
+    overflow: hidden;
+}
+.darken
+{
+    filter: brightness(55%);
+}
+/*----------------------------------------------------------------------LAYOUT---------------------------------------------------------------------------------------------------*/
+.content
+{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 25px;
+    max-width: 100%;
+    margin: 25px;
+}
+.one
+{
+    grid-column: 1 / 8;
+    grid-row: 1 / 2;
+}
+.two
+{
+    grid-column: 1 / 6;
+    grid-row: 2 / 4;
+    background-image: url(covid.jpg);
+    background-size: cover;
+}
+.three
+{
+    grid-column: 1 / 6;
+    grid-row: 4 / 6;
+    background-image: url(returning\ to\ school.jpg);
+    background-size: cover;
+}
+.four
+{
+    grid-column: 1 / 6;
+    grid-row: 6 / 8;
+    background-image: url(virtual\ school.jpg);
+    background-size: cover;
+}
+.five
+{
+    grid-column: 1 / 6;
+    grid-row: 8 / 10;
+    background-image: url(password.png);
+    background-size: cover;
+}
+.six
+{
+    grid-column: 6 / 9;
+    grid-row: 2 / 6;
+}
+.seven
+{
+    grid-column: 6 / 9;
+    grid-row: 6 / 10;
+}
+.eight
+{
+    grid-column: 1 / 9;
+    grid-row: 10 / 12;
+}
+/*----------------------------------------------------------------------OBJECTS ON WIDGET---------------------------------------------------------------------------------------------------*/
+.widgetOverlay 
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.8;
+    transition: opacity 0.25s;
+}
+.widgetOverlay:hover 
+{
+    opacity: 1;
+    backdrop-filter: blur(5px);
+}
+.widgetTitle
+{
+    color: #ffffff;
+}
+.widgetDescription
+{
+    color: #ffffff;
+}
+.widgetButton 
+{
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.4s;
+    border-radius: 10px;
+    background-color: #0FB2F2; 
+    color: white; 
+}
+.widgetButton:hover 
+{
+    background-color: #11538C;
+    color: white;
+}
+/*----------------------------------------------------------------------EMBEDDED OBJECTS---------------------------------------------------------------------------------------------------*/
+.googleCalender
+{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+#GoogleMap
+{
+    width: 100%;
+    overflow: hidden;
+}
+/*----------------------------------------------------------------------FOOTER---------------------------------------------------------------------------------------------------*/
+:root 
+{
+    --footer-bg: #1c2444;
+    --color: white;
+    --color-smooth: #9da2ae;
+}
+  
+footer 
+{
+    font-size: 16px;
+    background: var(--footer-bg);
+    padding-top: 2em;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 1em;
+}
+
+footer ul 
+{
+    list-style: none;
+}
+
+.col 
+{
+    flex: 1;
+    margin-left: 0px;
+}
+
+.col-title 
+{
+    color: var(--color);
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.col-list li
+{
+    color: white;
+}
+.col-list a 
+{
+    color: var(--color-smooth);
+    text-decoration: none;
+    line-height: 1.4;
+    font-weight: 400;
+    transition: 0.3s ease-in-out;
+}
+
+.col-list a:hover
+{
+    color: white;
+}
+
+.subscribe-btn 
+{
+    border: none;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 20px 0 20px 38px;
+    transition: 0.4s;
+    border-radius: 10px;
+    background-color: #0FB2F2; 
+    color: white; 
+    cursor: pointer;
+}
+
+.social-col-title 
+{
+    padding-left: 40px;
+    font-size: 1.2em;
+    color: var(--color);
+    font-weight: 500;
+}
+
+.social-media-list 
+{
+    display: flex;
+}
+
+.social-media-list a 
+{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 0.3em;
+    color: var(--color-smooth);
+    display: flex;
+    border-radius: 0.3em;
+    transition: all 0.25s ease 0s;
+}
+
+.social-media-list a:hover
+{
+    color: var(--color);
+    background: #ffffff1a;
+}
+/*----------------------------------------------------------------------CSS GRID CHANGES FOR DYNAMIC VIEW---------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 900px) 
+{
+    .content
+    {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 15px;
+        max-width: 100%;
+    }
+    .one
+    {
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+    }
+    .two
+    {
+        grid-column: 1 / 5;
+        grid-row: 2 / 4;
+    }
+    .three
+    {
+        grid-column: 1 / 5;
+        grid-row: 4 / 6;
+    }
+    .four
+    {
+        grid-column: 1 / 5;
+        grid-row: 6 / 8;
+    }
+    .five
+    {
+        grid-column: 1 / 5;
+        grid-row: 8 / 10;
+    }
+    .six
+    {
+        grid-column: 1 / 5;
+        grid-row: 10 / 14;
+    }
+    .seven
+    {
+        grid-column: 1 / 5;
+        grid-row: 14 / 18;
+    }
+    .eight
+    {
+        grid-column: 1 / 5;
+        grid-row: 18 / 20;
+    }
+
+    footer 
+    {
+        padding: 2em;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1460px)
+{
+    header .btn
+    {
+      display: block;
+    }
+  
+    header .menu
+    {
+      position: fixed;
+      flex-direction: column;
+      text-align: center;
+      background-color: #11538C;
+      color: #fff;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      right: -150%;
+      padding: 80px 0px;
+
+      transition: 0.5s;
+      transition-property: right;
+    }
+    header.scrolling-active .menu
+    {
+        background-color: #fff;
+        color: #11538C
+    }
+    
+    header .menu a
+    {
+        color: #11538C;
+    }
+    header .menu a
+    {
+      position: relative;
+      margin: 0 15px;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 500;
+      transition: 0.5s;
+    }
+    header .menu a::after
+    {
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: currentColor;
+      left: 0;
+      top: 30px;
+  
+      transition: transform 0.2s ease-in;
+    }
+    header .menu.active
+    {
+      right: 0;
+    }
+  
+    header .menu .close-btn
+    {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 25px;
+    }
+  
+    header .menu a
+    {
+      display: block;
+      font-size: 20px;
+      margin: 20px;
+      padding: 0 15px;
+    }
+
+    #home
+    {
+        display: block;
+    }
+
+    .DDC
+    {
+        position: relative;
+    }
+}
